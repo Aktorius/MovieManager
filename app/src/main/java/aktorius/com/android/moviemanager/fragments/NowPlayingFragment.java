@@ -23,8 +23,8 @@ import butterknife.ButterKnife;
  */
 public class NowPlayingFragment extends Fragment {
 
-    @BindView(R.id.rlMovie)
-    private RecyclerView rvMovies;
+    @BindView(R.id.rvMovies)
+    RecyclerView rvMovies;
 
     private List<Movie> movies;
 
@@ -47,7 +47,7 @@ public class NowPlayingFragment extends Fragment {
 
         MovieRecyclerViewAdapter adapter = new MovieRecyclerViewAdapter(getContext(), movies);
         rvMovies.setAdapter(adapter);
-        
+
         return view;
     }
 

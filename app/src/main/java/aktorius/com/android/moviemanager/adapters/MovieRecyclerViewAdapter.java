@@ -32,7 +32,7 @@ public class MovieRecyclerViewAdapter extends RecyclerView.Adapter<MovieRecycler
         this.context = context;
     }
 
-    public Context getContext(){
+    private Context getContext(){
         return context;
     }
 
