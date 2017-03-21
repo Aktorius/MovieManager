@@ -1,10 +1,12 @@
 package aktorius.com.android.moviemanager.models;
 
+import java.io.Serializable;
+
 /**
  * Created by Aktorius on 16/03/2017.
  */
 
-public class Movie {
+public class Movie implements Serializable{
 
     private String id;
     private String title;
