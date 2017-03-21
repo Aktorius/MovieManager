@@ -75,7 +75,8 @@ public class Movie implements Serializable{
     }
 
     public String getBacktropPath() {
-        return backtropPath;
+
+        return String.format("https://image.tmdb.org/t/p/w780%s", backtropPath);
     }
 
     public void setBacktropPath(String backtropPath) {
